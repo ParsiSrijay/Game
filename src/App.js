@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import { Navbar, NavbarBrand } from 'reactstrap';
 import Main from './components/MainComponent';
 import './App.css';
+import { ConfigureStore } from './redux/configureStore'
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import { ConfigureStore } from './redux/configureStore';
 
 const store = ConfigureStore();
 
