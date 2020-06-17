@@ -90,7 +90,7 @@ class Header extends Component{
 	        				<Row className="form-group">
 	        					<Label htmlFor=".password" md={12}>Password</Label>
                                 <Col md={12}>
-                                    <Control.text model=".password" id="password" 
+                                    <Control.password model=".password" id="password" 
                                     name="password" placeholder="Password" 
                                     className="form-control"
                                     />
@@ -134,7 +134,7 @@ class Header extends Component{
 	        				<Row className="form-group">
 	        					<Label htmlFor=".password" md={12}>Password</Label>
                                 <Col md={12}>
-                                    <Control.text model=".password" id="password" 
+                                    <Control.password model=".password" id="password" 
                                     name="password" placeholder="Password" 
                                     className="form-control"
                                     />

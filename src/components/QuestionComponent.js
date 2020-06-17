@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Modal, ModalHeader, ModalBody, Button, Label, Col, Row,Nav,NavItem } from 'reactstrap';
+import { Modal, ModalHeader, ModalBody, Button, Label, Col, Row,Nav,NavItem,Navbar } from 'reactstrap';
 import { Control, LocalForm, Errors } from 'react-redux-form';
 
 const required = (val) => val && val.length;
@@ -32,9 +32,10 @@ class QuestionForm extends Component {
     render() {
         return(
             <div>
-                <div className="container">
+                <Navbar expand="md">
+                    <div className="container">
                     <div className="row">
-                        <Nav className="mr-auto" navbar>
+                        <Nav>
                             <NavItem>
                                 <Button outline onClick={this.toggleFormModal}>
                                     <span className="fa fa-pencil fa-lg"></span> Add a Question
@@ -43,6 +44,7 @@ class QuestionForm extends Component {
                         </Nav>
                     </div>
                 </div>
+                </Navbar>
                 <Modal isOpen={this.state.isFormModalOpen} toggle={this.toggleFormModal}>
                 <ModalHeader toggle={this.toggleFormModal}>Add a question</ModalHeader>
                 <ModalBody>
